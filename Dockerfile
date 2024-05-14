@@ -29,6 +29,6 @@ RUN /opt/venv/bin/pip install -r requirements.txt
 # Copy mã nguồn và thiết lập lệnh khởi chạy
 COPY . /app
 WORKDIR /app
-
+EXPOSE 80
 # Sử dụng môi trường ảo để chạy ứng dụng
 CMD ["/opt/venv/bin/python", "app.py"]
